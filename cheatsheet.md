@@ -1,43 +1,85 @@
-Nmap
-sudo nmap -sV {IP}
-sudo nmap -sT 10.129.107.120 -top-ports 1000 -d
-sudo nmap -p- --min-rate=1000 -sV {IP}  #all ports range, or specific ports, min-rate specific min send packets per sec.
+# cheatsheet
 
-Telnet
-telnet open {IP}
+## Nmap
+  ```shell
+  sudo nmap -sV {IP}
+  ```
+  
+  ```shell
+  sudo nmap -sT 10.129.107.120 -top-ports 1000 -d
+  ```
 
-FTP
-ftp anonymous@{IP}
-Press Entry button if password is null
+  * all ports range, or specific ports, min-rate specific min send packets per sec.
+  ```shell
+  sudo nmap -p- --min-rate=1000 -sV {IP}
+  ```
+## Telnet
+  ```shell
+  telnet open {IP}
+  ```
 
-SMB
+## FTP
+* Press Entry button if password is null
+  ```shell
+  ftp anonymous@{IP}
+  ```
+
+## SMB
+```shell
 smbclient -L {IP}
+```
+```shell
 smbclient \\\\{IP}\\{DIR}
+```
 
-Redis
-info # see all info
-info server # see server info
+## Redis
+* see all info
+```shell
+info
+```
+* see server info
+```shell
+info server
+```
+```shell
 select {db}
+```
+```shell
 keys *
+```
+```shell
 dbsize
+```
 
-RDP
+## RDP
+```shell
 xfreerdp3 /v:{HOST} /u:{USERNAME}
+```
 
-WEB
-wordlist
+## WEB
+* wordlist
+```shell
 https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/common.txt
 gobuster
 gobuster dir -u 10.129.70.58 -w wordlist.txt
+```
 
-MongoDB
+## MongoDB
+```shell
 curl -O https://downloads.mongodb.com/compass/mongosh-2.3.2-linux-x64.tgz
+```
+```shell
 ./mongosh mongodb://{IP}:{PORT}
 show dbs;
 show tables;
 db.{TALBENAME}.find().pretty()
+```
 
-Rsync
-default port 873
+## Rsync
+* default port 873
+```shell
 rsync --list-only {IP}::public
+```
+```shell
 rsync {IP}::public/flag.txt flag.txt
+```
