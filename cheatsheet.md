@@ -4,6 +4,10 @@
   ```shell
   sudo nmap -sV {IP}
   ```
+  * if -sV not always enough, try -sC to run safe script for more version info.
+  ```shell
+  sudo nmap -sC {IP}
+  ```
   
   ```shell
   sudo nmap -sT 10.129.107.120 -top-ports 1000 -d
@@ -13,6 +17,7 @@
   ```shell
   sudo nmap -p- --min-rate=1000 -sV {IP}
   ```
+
 ## Telnet
   ```shell
   telnet open {IP}
