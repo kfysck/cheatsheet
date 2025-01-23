@@ -88,3 +88,15 @@ rsync --list-only {IP}::public
 ```shell
 rsync {IP}::public/flag.txt flag.txt
 ```
+
+## Kali RDP
+```shell
+#!/bin/bash
+sudo apt -y update
+sudo apt -y install kali-desktop-xfce xrdp
+sudo systemctl enable xrdp
+sudo systemctl restart xrdp
+# setting the password for the kali user so you can login to the desktop. 
+# Reset this once you have logged in.
+echo 'kali:kali' | sudo chpasswd    
+```
