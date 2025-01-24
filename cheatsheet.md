@@ -1,5 +1,13 @@
 # cheatsheet
 
+## Dictionary
+* wordlists
+  ```sudo apt install wordlists```
+* seclists
+  ```sudo apt install seclists```
+  * dir: danielmiessler/SecLists/master/Discovery/Web-Content/common.txt
+  * sub-domain: /SecLists/Discovery/DNS/subdomains-top1million-5000.txt
+
 ## Nmap
   ```shell
   sudo nmap -sV {IP}
