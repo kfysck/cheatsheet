@@ -69,6 +69,11 @@ gobuster
 gobuster dir -u 10.129.70.58 -w wordlist.txt
 ```
 
+* binding host
+```shell
+echo "10.129.128.223 unika.htb" | sudo tee -a /etc/hosts
+```
+
 ## MongoDB
 ```shell
 curl -O https://downloads.mongodb.com/compass/mongosh-2.3.2-linux-x64.tgz
