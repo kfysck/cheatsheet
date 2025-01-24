@@ -73,8 +73,13 @@ dbsize
 ```
 
 ## RDP
+### GUI RDP
 ```shell
 xfreerdp3 /v:{HOST} /u:{USERNAME}
+```
+### SHELL RDP
+```shell
+evil-winrm  -i 10.129.95.234 -u administrator -p badminton
 ```
 
 ## WEB
