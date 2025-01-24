@@ -5,8 +5,8 @@
   ```sudo apt install wordlists```
 * seclists
   ```sudo apt install seclists```
-  * dir: danielmiessler/SecLists/master/Discovery/Web-Content/common.txt
-  * sub-domain: /SecLists/Discovery/DNS/subdomains-top1million-5000.txt
+  * dir: /usr/share/seclists/Discovery/Web-Content/common.txt
+  * sub-domain: /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt
 
 ## Nmap
   ```shell
