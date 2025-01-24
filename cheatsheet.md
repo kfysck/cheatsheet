@@ -138,3 +138,12 @@ sudo systemctl restart xrdp
 # Reset this once you have logged in.
 echo 'kali:kali' | sudo chpasswd    
 ```
+
+## AWS
+* awscli
+  ```shell
+  sudo apt install awscli
+  aws configure
+  aws --endpoint=http://s3.thetoppers.htb s3 ls
+  
+  ```
