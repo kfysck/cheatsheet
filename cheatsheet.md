@@ -91,12 +91,15 @@ xfreerdp3 /v:{HOST} /u:{USERNAME}
 evil-winrm  -i 10.129.95.234 -u administrator -p badminton
 ```
 
-## WEB
-* wordlist
+## GoBuster
+* dir
 ```shell
 https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/common.txt
-gobuster
 gobuster dir -u 10.129.70.58 -w wordlist.txt
+```
+* sub-domain/vhost
+```shell
+gobuster vhost -u http://thetoppers.htb -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt --append-domain
 ```
 
 * binding host
