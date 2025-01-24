@@ -37,7 +37,7 @@ smbclient -L {IP}
 smbclient \\\\{IP}\\{DIR}
 ```
 ### NTLM Challange/Responder
-* Use tool: Responder
+* Use tool: Responder, acting a authentication server to collect hash string where target machine send to.
 ```shell
 git clone https://github.com/lgandx/Responder
 sudo python3 Responder.py -I tun0
