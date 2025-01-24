@@ -36,6 +36,8 @@ smbclient -L {IP}
 ```shell
 smbclient \\\\{IP}\\{DIR}
 ```
+* NTLM Challange/Responder, use tool: https://github.com/lgandx/Responder
+
 
 ## Redis
 * see all info
