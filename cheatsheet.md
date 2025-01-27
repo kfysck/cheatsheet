@@ -26,6 +26,9 @@
   sudo nmap -p- --min-rate=1000 -sV {IP}
   ```
 
+  * More information
+  ```sudo nmap -sV -sC -v {IP}```
+
 ## Telnet
   ```shell
   telnet open {IP}
