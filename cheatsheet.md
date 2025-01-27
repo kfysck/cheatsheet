@@ -7,6 +7,9 @@
   ```sudo apt install seclists```
   * dir: /usr/share/seclists/Discovery/Web-Content/common.txt
   * sub-domain: /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt
+ 
+## Tools
+* wappalyzer(extension)
 
 ## Nmap
   ```shell
