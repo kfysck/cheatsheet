@@ -7,6 +7,8 @@
   ```sudo apt install seclists```
   * dir: /usr/share/seclists/Discovery/Web-Content/common.txt
   * sub-domain: /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt
+* common weak credential pair
+  ```https://github.com/netbiosX/Default-Credentials/blob/master/Apache-Tomcat-Default-Passwords.mdown```
  
 ## Tools
 * wappalyzer(extension)
